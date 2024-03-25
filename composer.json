@@ -23,6 +23,12 @@
       "Vanchisto\\Testing\\": "src/"
     }
   },
+  "scripts": {
+    "test": [
+      "php-cs-fixer fix",
+      "phpcs"
+    ]
+  },
   "config": {
     "sort-packages": true
   },
@@ -32,5 +38,9 @@
     "php": "^8.3",
     "phpunit/phpunit": "^11.0.8",
     "phpstan/phpstan": "^1.10.65"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "vanchisto/php-code-style": "dev-master"
   }
 }
