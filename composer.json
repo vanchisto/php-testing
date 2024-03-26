@@ -23,10 +23,18 @@
       "Vanchisto\\Testing\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
   "scripts": {
     "test": [
       "php-cs-fixer fix",
-      "phpcs"
+      "phpcbf || true",
+      "phpcs",
+      "phpunit",
+      "phpstan analyse"
     ]
   },
   "config": {
