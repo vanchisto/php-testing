@@ -33,7 +33,8 @@
       "php-cs-fixer fix",
       "phpcbf || true",
       "phpcs",
-      "phpunit"
+      "phpunit",
+      "phpstan analyse"
     ]
   },
   "config": {
